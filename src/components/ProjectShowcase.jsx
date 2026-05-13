@@ -5,8 +5,7 @@ export const ProjectShowcase = () => {
   const showcaseItems = [
     {
       title: "Live Dashboard",
-      description:
-        "Real-time risk assessment and monitoring across all districts",
+      description:"Real-time risk assessment and monitoring across all districts",
       icon: "📊",
     },
     {
@@ -16,14 +15,12 @@ export const ProjectShowcase = () => {
     },
     {
       title: "District Insights",
-      description:
-        "Detailed analytics for each district with historical comparison",
+      description:"Detailed analytics for each district with historical comparison",
       icon: "📍",
     },
     {
       title: "Interactive Maps",
-      description:
-        "Color-coded risk visualization with drill-down capabilities",
+      description:"Color-coded risk visualization with drill-down capabilities",
       icon: "🗺️",
     },
   ];
@@ -74,7 +71,7 @@ export const ProjectShowcase = () => {
         className="glass-effect rounded-2xl p-8 border border-cyan-glow/30"
       >
         <h3 className="text-2xl font-bold text-gradient mb-6">
-          🎯 Central Command Dashboard
+          🎯Central Command Dashboard
         </h3>
 
         <div className="bg-gradient-to-br from-navy/50 to-navy-dark/50 rounded-lg p-6 aspect-video flex flex-col items-center justify-center border border-white/5 relative overflow-hidden">

@@ -97,7 +97,7 @@ export const Footer = ({ teamInfo }) => {
                 Get In Touch
               </h4>
               <p className="text-sm text-mist-white/70 mb-2">Project Guide</p>
-              <p className="text-sm text-mist-white/60 mb-4">[Guide Name]</p>
+              <p className="text-sm text-mist-white/60 mb-4">Ranjani K</p>
               <div className="flex gap-3">
                 <a
                   href="#"

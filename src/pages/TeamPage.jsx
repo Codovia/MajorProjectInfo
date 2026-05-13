@@ -5,35 +5,35 @@ import { Footer } from "../components/Footer";
 export const TeamPage = () => {
   const teamMembers = [
     {
-      name: "[Team Member 1]",
-      role: "Lead Developer",
-      contribution: "Frontend Architecture, React Components",
+      name: "Nandan Naik",
+      role: "3RD YEAR C SECTION",
+      contribution: "Department of Computer Science and Engineering",
       avatar: "👨‍💻",
     },
     {
-      name: "[Team Member 2]",
-      role: "Backend Engineer",
-      contribution: "FastAPI Server, ML Pipeline Integration",
+      name: "V Suhaan Acharya",
+      role: "3RD YEAR C SECTION",
+      contribution: "Department of Computer Science and Engineering",
       avatar: "👨‍💼",
     },
     {
-      name: "[Team Member 3]",
-      role: "ML Specialist",
-      contribution: "Model Development, Data Analysis",
+      name: "Shravan ArunaChandra Naik",
+      role: "3RD YEAR C SECTION",
+      contribution: "Department of Computer Science and Engineering",
       avatar: "👨‍🔬",
     },
     {
-      name: "[Team Member 4]",
-      role: "Data Engineer",
-      contribution: "Data Processing, Database Management",
+      name: "Prajanth Poojary",
+      role: "3RD YEAR C SECTION",
+      contribution: "Department of Computer Science and Engineering",
       avatar: "👨‍💻",
     },
   ];
 
   const guide = {
-    name: "[Guide Name]",
+    name: "Ranjani K",
     title: "Project Guide",
-    department: "[Department Name]",
+    department: "Computer Science and Engineering",
     expertise: "Research Mentorship",
   };
 
