@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { GradientText, GlassCard } from "../components/UI";
 import { Footer } from "../components/Footer";
+import ranjaniImage from "../assets/team/Ranjani.webp";
+import nandanImage from "../assets/team/nandan.jpeg";
+import shravanImage from "../assets/team/shravan.jpeg";
+import suhaanInage from "../assets/team/Suhaan.jpeg";
+import pajanthImage from "../assets/team/prajanth.jpeg";
 
 export const TeamPage = () => {
   const teamMembers = [
@@ -8,30 +13,30 @@ export const TeamPage = () => {
       name: "Nandan Naik",
       role: "3RD YEAR C SECTION",
       contribution: "Department of Computer Science and Engineering",
-      avatar: "👨‍💻",
+      avatarImage: nandanImage,
     },
     {
       name: "V Suhaan Acharya",
       role: "3RD YEAR C SECTION",
       contribution: "Department of Computer Science and Engineering",
-      avatar: "👨‍💼",
+      avatarImage: suhaanInage,
     },
     {
       name: "Shravan ArunaChandra Naik",
       role: "3RD YEAR C SECTION",
       contribution: "Department of Computer Science and Engineering",
-      avatar: "👨‍🔬",
+      avatarImage: shravanImage,
     },
     {
       name: "Prajanth Poojary",
       role: "3RD YEAR C SECTION",
       contribution: "Department of Computer Science and Engineering",
-      avatar: "👨‍💻",
+      avatarImage: pajanthImage,
     },
   ];
 
   const guide = {
-    name: "Ranjani K",
+    name: "Ranjani K Assistant Professor",
     title: "Project Guide",
     department: "Computer Science and Engineering",
     expertise: "Research Mentorship",
@@ -82,7 +87,11 @@ export const TeamPage = () => {
           className="mb-16 max-w-md mx-auto"
         >
           <GlassCard className="p-8 rounded-2xl text-center border-2 border-accent-amber/50">
-            <div className="text-6xl mb-4">👨‍🏫</div>
+            <img
+              src={ranjaniImage}
+              alt="Ranjani K"
+              className="w-32 h-32 mx-auto mb-4 rounded-full object-cover border-4 border-accent-amber/60 shadow-lg"
+            />
             <h2 className="text-2xl font-bold text-accent-amber mb-2">
               {guide.name}
             </h2>
@@ -119,9 +128,17 @@ export const TeamPage = () => {
                 whileHover={{ y: -10 }}
                 className="glass-effect p-6 rounded-xl text-center group"
               >
-                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
-                  {member.avatar}
-                </div>
+                {member.avatarImage ? (
+                  <img
+                    src={member.avatarImage}
+                    alt={member.name}
+                    className="w-24 h-24 mx-auto mb-4 rounded-full object-cover border-4 border-cyan-glow/40 shadow-lg group-hover:scale-110 transition-transform"
+                  />
+                ) : (
+                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+                    {member.avatar}
+                  </div>
+                )}
                 <h3 className="text-xl font-bold text-cyan-glow mb-1">
                   {member.name}
                 </h3>
